@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1688,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1600/fl_lossy,q_auto/v1690668846/230720-madison-wisconsin-tease_gjfojl");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the transparency (0.5 is 50% opaque black) */
+  }
+  
+  .main {
+    width: 75%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the opacity for a glass effect */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: auto; /* Center the element horizontally */
+    margin-top: 50px; /* Add space from the top */
+    padding: 20px; /* Add padding for content inside the container */
+  }
+  
+
+  .search-box {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contain {
+    text-align: center;
+    position: relative;
+  }
+  input {
+    border: none;
+    border-radius: 10px;
+    color: black;
+    margin: 5px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  input:focus {
+    border: none;
+  }
+  
+  button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .submitbtn {
+    display: none;
+  }
+  i {
+    font-size: 25px;
+  }
+  .not-found {
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+  .contryname,
+  .temp {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .contryname {
+    padding-left: 3%;
+  }
+  img {
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  .weekly div img {
+    float: right;
+    width: 45px;
+    height: 45px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  .row1 .temp p,
+  .contryname p {
+    font-size: 15px;
+  }
+  .temp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 5%;
+  }
+  
+  .row2 {
+    margin-top:1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .row2 h4 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  span,
+  .weekly p {
+    font-weight: bold;
+    font-size: larger;
+  }
+  .weekly {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .weekly div {
+    align-items: center;
+  }
+  .weekly h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .weekly div p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  footer {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  
+
+
+  /* Media query for smaller devices */
+  @media only screen and (max-width: 600px) {
+    body{
+      width: 100vw;
+      height: auto;
+      position: relative;
+    }
+    .main {
+      height: 100%;
+      width: 100%; /* Adjust width for smaller devices */
+      min-height: 100vh; /* Adjust height for smaller devices */
+      margin-top: 20px; /* Adjust margin top for smaller devices */
+    }
+  
+    .search-box {
+     font-size: 50px;
+      margin-top: 10px; /* Adjust margin top for smaller devices */
+    }
+  
+    .contain {
+      text-align: center;
+      position: relative;
+    }
+  
+    input {
+      border: none;
+      border-radius: 10px;
+      color: black;
+      margin: 5px;
+      font-size: 18px; /* Adjust font size for smaller devices */
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+    }
+  
+    .not-found {
+      font-size: 25px; /* Adjust font size for smaller devices */
+    }
+    .row1{
+        margin-top: 5%;
+    }
+    .contryname{
+        margin-top: 10px;
+    }
+    .row1 h4{
+        font-size: 20px;
+    }
+    .row1 .temp p,
+    .contryname p {
+      font-size: 12px; /* Adjust font size for smaller devices */
+    }
+  
+    .temp img {
+      font-size: 10px;
+      width: 50px; /* Adjust image size for smaller devices */
+      height: 50px; /* Adjust image size for smaller devices */
+    }
+  
+    .weekly {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .weekly div{
+        margin: 6px 1.5px 0px 1.5px;
+      }
+    .weekly div img {
+        font-size: 8px;
+      width: 25px; /* Adjust image size for smaller devices */
+      height: 25px; /* Adjust image size for smaller devices */
+    }
+    .row2{
+        margin-top: 50px;
+    }
+    .row2 h4 {
+      font-size: 18px; /* Adjust font size for smaller devices */
+    }
+  
+    .weekly h4 {
+      font-size: 20px; /* Adjust font size for smaller devices */
+    }
+  
+    .weekly div p {
+      font-size: 10px; /* Adjust font size for smaller devices */
+    }
+  
+    
+  footer {
+    position: absolute;
+    /* bottom: -10%; */
+    bottom: 20px;
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 10px;
+  }
+  
+  }
+  

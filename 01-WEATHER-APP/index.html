@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+      <link rel="stylesheet" href="./style.css"> 
+     <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="main">
+        <form>
+            <div class="search-box">
+                <input type="text" placeholder="CityName" name="cityname">
+                <button  id="btn" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            </form>
+           <div class="not-found">
+                <h5>City Not Found!</h5>
+            </div>
+             
+             <div class="weather-box">
+                 <div class="contain">
+                     <div class="row1">
+                     <div class="contryname">
+                        <h4 id="city">City Name</h4>
+                         <p class="time"></p>
+                     </div>
+                     <div class="temp">
+                        <img src="" alt="img">
+                        <p></p>
+                        <h4 id="temp">20</h4>
+                       
+                     </div>
+                 </div>
+                 <div class="row2">
+                    <div class="pressure">
+                        <div class="h">
+                            <div class="material-symbols-outlined">
+                                compare_arrows
+                            </div>
+                                <h4>Pressure</h4>
+                        </div>
+                       <span></span>
+                     </div>
+                     <div class="humi">
+                      <div class="h">
+                        <div class="material-symbols-outlined">
+                            humidity_percentage
+                        </div>
+                        <h4>Humidity</h4>
+                      </div>
+                         <span class="value"></span>
+                     </div>
+                     <div class="wind">
+                        <div class="h">
+                            <div class="material-symbols-outlined">
+                                air
+                            </div>
+                            <h4>Wind</h4>
+                        </div>
+                        <span></span>
+                     </div>
+                 </div>
+                 
+            </div>
+             <div class="weekly">
+                <div class="day1">
+                    <h4>Sun</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                 <div class="day2">
+                    <h4>Mon</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                 <div class="day3">
+                    <h4>Tue</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                 <div class="day4">
+                    <h4>Wed</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                 <div class="day5">
+                    <h4>Thur</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                 <div class="day6">
+                    <h4>Fri</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                 <div class="day7">
+                    <h4>Sat</h4>
+                    <img src="" alt="img">
+                    <p id="wdesc">description</p>
+                    <p id="wtemp">Temperature: N/A</p>
+                    <p id="wpress">Pressure: N/A</p>
+                    <p id="wwind">Wind: N/A</p>
+                    <p id="whumi">Humidity: N/A</p>
+                 </div>
+                </div>
+              
+    
+</div>
+        <footer>
+            <p>&copy;2024 @AG. All rights reserved.</p>
+        </footer>
+        <script src="./script.js"></script>
+</body>
+
+</html>
+    
